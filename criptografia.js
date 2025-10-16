@@ -115,3 +115,8 @@ console.log(encrypt(texto, key, true))
 const textoEncriptado = encrypt(texto, key, true)
 console.log("\nTexto decriptado:")
 console.log(decrypt(textoEncriptado, key, false))
+
+console.log("\nTexto encriptado que deve retornar throw:")
+let textoComDefeito = "Maça@"
+console.log(encrypt(textoComDefeito, key, true))
+
