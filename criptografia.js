@@ -3,23 +3,11 @@ let alfabeto = [
 ]
 
 
-let valor = 0
 let valoresPorLetra = []
 
 for (let i = 0; i < alfabeto.length; i++) {
     valoresPorLetra.push(i)
 }
-
-
-for (let i = 0; i < alfabeto.length; i++) {
-    if (alfabeto[i] === 'm') {
-        console.log("valoresPorLetra[m]", valoresPorLetra[i])
-    }
-    if (alfabeto[i] === 'B') {
-        console.log("valoresPorLetra[B]", valoresPorLetra[i])
-    }
-}
-
 
 const encrypt = (texto, chave, operacao) => {
 
@@ -116,10 +104,10 @@ const generateChaveFinal = (texto, chave) => {
 }
 
 const key = 'ABC1'
-const texto = 'Amigos ç'
+const texto = 'Amigos e Pessoas'
 
-console.log("texto original: \n", texto)
-console.log("chave: \n", key)
+console.log("texto original:", texto)
+console.log("chave:", key)
 
 console.log("\nTexto encriptado:")
 console.log(encrypt(texto, key, true))
